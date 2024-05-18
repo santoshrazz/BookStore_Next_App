@@ -1,4 +1,5 @@
 import { PRODUCT } from "@/Interface/Interface";
+import Link from "next/link";
 import React from "react";
 
 let BookArray: PRODUCT[] | null = null;
@@ -16,13 +17,13 @@ const Main = async () => {
             className="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md"
             key={ind}
           >
-            <a href="#">
+            <Link href={`/Product/${e.id}`}>
               <img
                 className="h-60 rounded-t-lg w-full object-contain"
                 src={e.image}
                 alt="product image"
               />
-            </a>
+            </Link>
             <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">
               Sale
             </span>
@@ -91,8 +92,8 @@ const Main = async () => {
                     $299
                   </span>
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href={`/Product/${e.id}`}
                   className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   <svg
@@ -110,7 +111,7 @@ const Main = async () => {
                     />
                   </svg>
                   View Product
-                </a>
+                </Link>
               </div>
             </div>
           </div>
