@@ -25,16 +25,11 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href={"/Jwellery"}
+              href="/Contact"
               className="text-xl font-semibold hover:text-blue-600"
             >
-              Jwellery
-            </Link>
-          </li>
-          <li>
-            <a href="" className="text-xl font-semibold hover:text-blue-600">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <button className=" outline hover:bg-white hover:text-black delay-75 ease-in font-serif outline-white py-2 px-6 rounded-md text-white">

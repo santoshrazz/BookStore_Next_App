@@ -17,7 +17,7 @@ const Main = async () => {
             className="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md"
             key={ind}
           >
-            <Link href={`/Product/${e.id}`}>
+            <Link href={`/Product/Single_Product/${e.id}`}>
               <img
                 className="h-60 rounded-t-lg w-full object-contain"
                 src={e.image}
@@ -93,7 +93,7 @@ const Main = async () => {
                   </span>
                 </p>
                 <Link
-                  href={`/Product/${e.id}`}
+                  href={`/Product/Single_Product/${e.id}`}
                   className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
                 >
                   <svg
