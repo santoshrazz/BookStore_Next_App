@@ -25,7 +25,7 @@ const page = async ({ params }: { params: { productId: string } }) => {
                   width={200}
                   height={200}
                   className="w-full h-full object-contain"
-                  src={singleProduct?.image}
+                  src={singleProduct?.image || ""}
                   alt="Product Image"
                 />
               </div>
