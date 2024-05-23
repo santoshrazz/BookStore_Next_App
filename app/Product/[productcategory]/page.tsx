@@ -1,6 +1,7 @@
 import React from "react";
 import { PRODUCT } from "@/Interface/Interface";
 import Link from "next/link";
+import Image from "next/image";
 const page = async ({ params }: { params: { productcategory: string } }) => {
   let productWithCategory: PRODUCT[] | null = null;
   try {
@@ -20,7 +21,9 @@ const page = async ({ params }: { params: { productcategory: string } }) => {
             key={ind}
           >
             <Link href={`/Product/Single_Product/${e.id}`}>
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="h-60 rounded-t-lg w-full object-contain"
                 src={e.image}
                 alt="product image"

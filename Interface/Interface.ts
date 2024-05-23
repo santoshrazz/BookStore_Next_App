@@ -7,6 +7,13 @@ export interface PRODUCT {
   rating: Rate;
 }
 
+export interface PRODUCT_CATEGORY {
+  title: string;
+  subtitile: string;
+  image: string;
+  startPrice: number;
+  redirectURL: string;
+}
 interface Rate {
   rate: number;
   count: number;

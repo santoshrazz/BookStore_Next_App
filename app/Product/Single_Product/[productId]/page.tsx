@@ -1,4 +1,5 @@
 import { PRODUCT } from "@/Interface/Interface";
+import Image from "next/image";
 import React from "react";
 
 const page = async ({ params }: { params: { productId: string } }) => {
@@ -20,7 +21,9 @@ const page = async ({ params }: { params: { productId: string } }) => {
           <div className="flex flex-col md:flex-row -mx-4">
             <div className="md:flex-1 px-4">
               <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   className="w-full h-full object-contain"
                   src={singleProduct?.image}
                   alt="Product Image"
